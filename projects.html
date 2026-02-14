@@ -51,7 +51,7 @@
 
     <header class="hero page-hero" id="top"></header>
 
-    <main class="container">
+    <main class="container" style="max-width: 1200px;">
       <section class="page-header">
         <h1 class="page-title">Projects</h1>
         <p class="page-subhead">
@@ -59,54 +59,200 @@
         </p>
       </section>
 
-      <section class="project-list">
-        <article class="project-detail" id="equity-platform">
+ <section class="project-list" style="width: 100%; display: block;">
+  <article class="project-detail" id="equity-platform" style="width: 100%; padding: 2.5rem 3rem; margin-bottom: 3rem;">
+    <div class="project-top">
+      <h2>Technical Screening & Market Structure Engine using Python and Excel</h2>
+      <span class="tag">Research</span>
+    </div>
+    <div class="project-body" style="display: block;">
+      <div class="project-media" style="text-align: center; margin-bottom: 2rem;">
+        <img src="Dash.png" 
+             alt="Technical Screening Engine Dashboard" 
+             style="max-width: 100%; height: auto; border-radius: 12px;">
+        <div class="media-caption" style="margin-top: 0.75rem; opacity: 0.8;">
+          Excel-based market structure dashboard with automated data flow and screening.
+        </div>
+      </div>
+
+      <div class="project-content" style="width: 100%;">
+        <p class="muted">
+          A Python-powered Excel engine built to systematically screen 1900+ NSE stocks,
+          map market structure, and identify emerging leadership through a disciplined,
+          repeatable framework.
+        </p>
+
+        <h3>Overview</h3>
+        <p>
+          With more than 1900 stocks listed on the National Stock Exchange of India,
+          access to data is not the competitive advantage. The advantage lies in
+          structuring that data into a repeatable process that filters noise,
+          improves speed, and highlights leadership early.
+        </p>
+        <p>
+          This system was built to transform Excel from a static spreadsheet tool
+          into a scalable market analysis engine. By integrating automated Python
+          data pipelines with a structured Excel front-end, the platform enables
+          full-market coverage with minimal manual intervention.
+        </p>
+
+        <h3>Architecture & Data Stack</h3>
+        <ul>
+          <li>Python-based backend for automated historical and live OHLCV data fetching.</li>
+          <li>Structured CSV database for clean, append-only historical storage.</li>
+          <li>Power Query pipelines to ingest and transform CSV data directly into Excel.</li>
+          <li>VBA automation for one-click refresh, processing, and structured list generation.</li>
+          <li>Advanced Excel functions including VSTACK, FILTER, INDEX, and CHOOSECOLS for dynamic dataset construction.</li>
+          <li>Live data loop for real-time monitoring and alignment.</li>
+          <li>Excel front-end for visualization, screening logic, and execution tracking.</li>
+        </ul>
+        <p>
+          Every trading day begins with executing <strong>master.py</strong>, which
+          updates the historical database up to T-1. Once completed, the live engine
+          initiates real-time data flow. Excel then processes the updated datasets
+          with a single refresh action, recalculating indicators and updating
+          screening outputs instantly.
+        </p>
+
+        <h3>Market Structure Mapping</h3>
+        <p>
+          Each stock is classified by sector, industry, and market capitalization.
+          This enables multi-layered screening and allows observation of capital
+          rotation across different segments of the market.
+        </p>
+        <ul>
+          <li>Sector-wise trend identification</li>
+          <li>Industry-level leadership tracking</li>
+          <li>Market-cap participation analysis</li>
+          <li>Broad market breadth observation</li>
+        </ul>
+
+        <h3>Custom Screening Framework</h3>
+        <ul>
+          <li>Volatility Contraction Pattern (VCP) detection logic built in Python (currently in beta).</li>
+          <li>Trend and consolidation structure filters for early-stage setup identification.</li>
+          <li>Breakout readiness tracking using predefined technical conditions.</li>
+          <li>Multi-stage shortlist generation for structured manual review.</li>
+        </ul>
+        <p>
+          The VCP module is developed in Python and is currently in beta, assisting in narrowing down structurally strong contraction setups. However, the final evaluation remains discretionary. The system supports decision-making, but interpretation and validation are performed manually to maintain contextual judgment.
+        </p>
+
+        <h3>Execution Framework</h3>
+        <p>
+          The platform integrates into a structured but actively managed decision pipeline. Market bias is assessed first. Stocks move into a <strong>Check</strong> list based on structural alignment. From there, deeper shortlisting occurs across multiple layers before a stock reaches the <strong>Final</strong> list.
+        </p>
+        <p>
+          Fundamental validation, broader market context, and discretionary chart interpretation are performed manually. Only after personal confirmation of structure and trigger alignment does a stock transition into the <strong>Buy1</strong> category. The system assists in filtering and organizing data, but majority of the critical decisions and refinements are executed independently.
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          The system enables screening of the entire NSE universe in approximately
+          20–30 minutes while maintaining structure and consistency. It improves
+          speed, reduces noise, and supports data-driven decision making in a
+          repeatable manner.
+        </p>
+
+        <div class="project-links">
+          <a href="#">Repo</a>
+          <a href="#">Docs</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+        <article class="project-detail" id="valuation-dashboard" style="max-width: 100%; padding: 2rem 2rem;">
           <div class="project-top">
-            <h2>Systematic Equity Research Platform</h2>
-            <span class="tag">Research</span>
+            <h2>AI-Enhanced Relative Valuation Scatter Dashboard</h2>
+            <span class="tag">Valuation</span>
           </div>
-          <div class="project-body">
-            <div class="project-content">
+
+          <div class="project-body" style="display: block;">
+            <div class="project-media" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+  <div style="text-align:center;">
+    <img src="scatter-normal.png" 
+         alt="Relative Valuation Scatter Dashboard" 
+         style="max-width: 520px; width: 100%; height: auto; border-radius: 12px;">
+    <div class="media-caption" style="margin-top: 0.5rem; opacity: 0.8;">
+      Standard Relative Valuation Scatter Plot
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <img src="scatter-ai.png" 
+         alt="AI Enhanced Relative Valuation Scatter Dashboard" 
+         style="max-width: 520px; width: 100%; height: auto; border-radius: 12px;">
+    <div class="media-caption" style="margin-top: 0.5rem; opacity: 0.8;">
+      AI-Enhanced Scatter Plot with Similarity-Based Clustering
+    </div>
+  </div>
+</div>
+
+            <div class="project-content" style="width: 100%;">
               <p class="muted">
-                Modular platform that combines screening, valuation dashboards,
-                and concall summaries into one workflow.
+                A Streamlit-powered interactive dashboard that visualizes relative valuation positioning
+                across peer groups using financial multiples and performance drivers.
               </p>
+
               <h3>Overview</h3>
               <p>
-                Add your detailed explanation here. Describe the problem, the
-                approach, and the outcome. Keep it structured and easy to scan.
+                The dashboard fetches financial and market data using yfinance and dynamically
+                plots cross-sectional valuation relationships such as P/E vs Earnings Growth,
+                EV/EBITDA vs ROCE, and other driver-based multiple comparisons.
               </p>
-              <h3>What I built</h3>
+              <p>
+                Instead of static peer comparison, the system enables visual identification of
+                valuation dispersion, relative premiums, and potential mispricing across
+                industry groups.
+              </p>
+
+              <h3>Core Capabilities</h3>
               <ul>
-                <li>Excel-based screening engine with automated refresh.</li>
-                <li>Valuation scatter dashboards for peer comparisons.</li>
-                <li>Concall intelligence module for faster review.</li>
+                <li>Matplotlib-based scatter engine integrated into a Streamlit dashboard.</li>
+                <li>Cross-sectional valuation mapping across industries and custom stock lists.</li>
+                <li>Outlier detection through driver-based multiple comparison.</li>
+                <li>One-click Excel-to-dashboard integration for instant visualization from screened lists.</li>
+                <li>Selected stock is highlighted in red for immediate visual reference against peer clusters, while AI-grouped similar stocks are colored in yellow.</li>
               </ul>
+
+              <h3>AI-Driven Business Similarity Layer</h3>
+              <p>
+                An advanced AI layer is integrated using Ollama to enhance peer comparison.
+                The model analyzes business descriptions and groups structurally similar
+                companies using semantic similarity scoring.
+              </p>
+              <ul>
+                <li>Embedding-based similarity scoring across selected peer sets.</li>
+                <li>Automatic clustering of comparable companies.</li>
+                <li>Color-coded grouping on scatter plots to visualize business proximity.</li>
+                <li>Interactive threshold filtering to refine comparable universes.</li>
+                <li>AI-generated reasoning for similarity relationships.</li>
+              </ul>
+
+              <p>
+                This transforms traditional multiple comparison into an AI-assisted
+                comparable intelligence system, ensuring that valuation comparisons are
+                made between structurally aligned businesses rather than arbitrary peers.
+              </p>
+
+              <h3>Impact</h3>
+              <p>
+                The dashboard combines quantitative dispersion analysis, AI-based business
+                clustering, and interactive visualization into a unified research tool.
+                It enables faster identification of valuation inefficiencies while
+                maintaining contextual accuracy in peer comparison.
+              </p>
+
               <div class="project-links">
                 <a href="#">Repo</a>
                 <a href="#">Docs</a>
               </div>
             </div>
-            <div class="project-media">
-              <div class="media-grid">
-                <div class="media-item">
-                  <div class="media-placeholder">Image / Chart</div>
-                  <span class="media-caption">Caption for image or chart.</span>
-                </div>
-                <div class="media-item">
-                  <div class="media-placeholder">Image / Chart</div>
-                  <span class="media-caption">Caption for image or chart.</span>
-                </div>
-                <div class="media-item">
-                  <div class="media-placeholder">Video / Demo</div>
-                  <span class="media-caption">Caption for video/demo.</span>
-                </div>
-              </div>
-            </div>
           </div>
         </article>
 
-        <article class="project-detail" id="screening-engine">
+        <article class="project-detail" id="screening-engine" style="margin-top: 3rem;">
           <div class="project-top">
             <h2>Technical Screening Engine</h2>
             <span class="tag">Automation</span>
@@ -142,48 +288,6 @@
                 <div class="media-item">
                   <div class="media-placeholder">Image / Sheet</div>
                   <span class="media-caption">Caption for screen.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-detail" id="valuation-dashboard">
-          <div class="project-top">
-            <h2>Valuation Scatter Dashboard</h2>
-            <span class="tag">Valuation</span>
-          </div>
-          <div class="project-body">
-            <div class="project-content">
-              <p class="muted">
-                Visualizes valuation positioning across peer groups to spot
-                mispricing.
-              </p>
-              <h3>Overview</h3>
-              <p>
-                Add your detailed explanation here. Explain how the dashboard
-                helps identify relative value and decision points.
-              </p>
-              <h3>What I built</h3>
-              <ul>
-                <li>P/E vs growth and EV/EBITDA vs ROCE views.</li>
-                <li>Quick links from screened lists to dashboards.</li>
-                <li>Outlier detection for relative valuation decisions.</li>
-              </ul>
-              <div class="project-links">
-                <a href="#">Repo</a>
-                <a href="#">Deck</a>
-              </div>
-            </div>
-            <div class="project-media">
-              <div class="media-grid">
-                <div class="media-item">
-                  <div class="media-placeholder">Image / Chart</div>
-                  <span class="media-caption">Caption for chart.</span>
-                </div>
-                <div class="media-item">
-                  <div class="media-placeholder">Image / Chart</div>
-                  <span class="media-caption">Caption for chart.</span>
                 </div>
               </div>
             </div>

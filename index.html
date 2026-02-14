@@ -81,10 +81,11 @@
         </div>
 
         <div class="section-body">
-          <!-- Edit: replace this paragraph with 2-3 short lines. -->
-          <p>
-            Independent swing trader focused on market structure and techno-fundamental analysis. Cleared CFA Level II, with a background in Commerce from Shaheed Bhagat Singh College (University of Delhi). Currently building disciplined, drawdown-aware systems and scalable research tools for customized market use cases.
-          </p>
+          <article class="timeline-item">
+            <p>
+              Independent swing trader focused on market structure and techno-fundamental analysis. Cleared CFA Level II, with a background in Commerce from Shaheed Bhagat Singh College (University of Delhi). Currently building disciplined, drawdown-aware systems and scalable research tools for customized market use cases.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -134,44 +135,41 @@
         <div class="section-title">
           <h2>Featured projects</h2>
         </div>
-        <div class="project-grid">
+        <div class="project-grid" style="grid-template-columns: repeat(2, minmax(360px, 1fr)); width: 100%;">
           <article class="project">
             <div class="project-header">
-              <h3>Systematic Equity Research Platform</h3>
+              <h3>Technical Screening & Market Structure Engine</h3>
               <span class="tag">Research</span>
             </div>
             <p>
-              Modular system combining Excel screening, valuation dashboards,
-              and concall summaries.
+              Python-powered Excel system covering 1900+ NSE stocks with structured
+              market mapping, multi-layer shortlisting, and discretionary execution framework.
             </p>
-            <a href="projects.html#equity-platform" aria-label="Project details"
-              >View</a
-            >
+            <a href="projects.html#equity-platform" aria-label="Project details">View</a>
           </article>
+
           <article class="project">
             <div class="project-header">
-              <h3>Technical Screening Engine</h3>
-              <span class="tag">Automation</span>
-            </div>
-            <p>
-              One-click refresh engine covering 1,800+ NSE stocks with Power
-              Query, VBA automation, and dynamic screening outputs.
-            </p>
-            <a href="projects.html#screening-engine" aria-label="Project details"
-              >View</a
-            >
-          </article>
-          <article class="project">
-            <div class="project-header">
-              <h3>Valuation Scatter Dashboard</h3>
+              <h3>AI-Enhanced Relative Valuation Scatter Dashboard</h3>
               <span class="tag">Valuation</span>
             </div>
             <p>
-              Visualized peer-group valuation positioning to spot mispricing.
+              Streamlit-based valuation dashboard plotting multiples vs drivers with
+              AI-powered business similarity clustering and red/yellow visual peer grouping.
             </p>
-            <a href="projects.html#valuation-dashboard" aria-label="Project details"
-              >View</a
-            >
+            <a href="projects.html#valuation-dashboard" aria-label="Project details">View</a>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <h3>Technical Screening Engine (Automation Layer)</h3>
+              <span class="tag">Automation</span>
+            </div>
+            <p>
+              One-click refresh engine built with Power Query, VBA, and advanced Excel
+              functions (VSTACK, FILTER, INDEX, CHOOSECOLS) for dynamic screening outputs.
+            </p>
+            <a href="projects.html#screening-engine" aria-label="Project details">View</a>
           </article>
         </div>
         <div class="section-cta">
@@ -184,30 +182,34 @@
           <h2>Skills</h2>
         </div>
         <div class="skill-columns">
-          <div>
+
+          <article class="timeline-item">
             <h3>Valuation & Research</h3>
             <ul>
               <li>DCF modeling and relative valuation</li>
               <li>Fundamental and technical analysis</li>
               <li>Portfolio construction and thesis building</li>
             </ul>
-          </div>
-          <div>
+          </article>
+
+          <article class="timeline-item">
             <h3>Analytics & Tools</h3>
             <ul>
               <li>Advanced Excel, VBA, Power Query</li>
               <li>Python automation and data pipelines</li>
               <li>CapIQ, PrivateCircle, Screener.in</li>
             </ul>
-          </div>
-          <div>
+          </article>
+
+          <article class="timeline-item">
             <h3>Leadership</h3>
             <ul>
               <li>Project leadership and mentoring</li>
               <li>Workshop facilitation and training</li>
               <li>System design for research teams</li>
             </ul>
-          </div>
+          </article>
+
         </div>
       </section>
     </main>
