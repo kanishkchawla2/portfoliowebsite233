@@ -637,7 +637,7 @@ h1 {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   padding-bottom: 4.5rem;
 }
@@ -715,6 +715,14 @@ h1 {
 .project-media {
   display: grid;
   gap: 1rem;
+}
+
+.project-media img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .media-grid {

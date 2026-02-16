@@ -51,7 +51,7 @@
 
     <header class="hero page-hero" id="top"></header>
 
-    <main class="container">
+    <main class="container" style="max-width: 1200px;">
       <section class="page-header">
         <h1 class="page-title">Projects</h1>
         <p class="page-subhead">
@@ -59,22 +59,23 @@
         </p>
       </section>
 
-    <section class="project-list">
-  <article class="project-detail" id="equity-platform">
+ <section class="project-list" style="width: 100%; display: block;">
+  <article class="project-detail" id="equity-platform" style="width: 100%; padding: 2.5rem 3rem; margin-bottom: 3rem;">
     <div class="project-top">
       <h2>Technical Screening & Market Structure Engine using Python and Excel</h2>
       <span class="tag">Research</span>
     </div>
     <div class="project-body" style="display: block;">
-      <div class="project-media">
+      <div class="project-media" style="text-align: center; margin-bottom: 2rem;">
         <img src="Dash.png" 
-             alt="Technical Screening Engine Dashboard" >
-        <div class="media-caption">
+             alt="Technical Screening Engine Dashboard" 
+             style="max-width: 100%; height: auto; border-radius: 12px;">
+        <div class="media-caption" style="margin-top: 0.75rem; opacity: 0.8;">
           Excel-based market structure dashboard with automated data flow and screening.
         </div>
       </div>
 
-      <div class="project-content">
+      <div class="project-content" style="width: 100%;">
         <p class="muted">
           A Python-powered Excel engine built to systematically screen 1900+ NSE stocks,
           map market structure, and identify emerging leadership through a disciplined,
@@ -161,32 +162,34 @@
     </div>
   </article>
 
-        <article class="project-detail" id="valuation-dashboard">
+        <article class="project-detail" id="valuation-dashboard" style="max-width: 100%; padding: 2rem 2rem;">
           <div class="project-top">
             <h2>AI-Enhanced Relative Valuation Scatter Dashboard</h2>
             <span class="tag">Valuation</span>
           </div>
 
-          <div class="project-body">
-            <div class="project-media side-by-side">
-  <div class="media-item">
+          <div class="project-body" style="display: block;">
+            <div class="project-media" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+  <div style="text-align:center;">
     <img src="Scatter.png" 
-         alt="Relative Valuation Scatter Dashboard">
-    <div class="media-caption">
+         alt="Relative Valuation Scatter Dashboard" 
+         style="max-width: 520px; width: 100%; height: auto; border-radius: 12px;">
+    <div class="media-caption" style="margin-top: 0.5rem; opacity: 0.8;">
       Standard Relative Valuation Scatter Plot
     </div>
   </div>
 
-  <div class="media-item">
+  <div style="text-align:center;">
     <img src="Scatter_AI.png" 
-         alt="AI Enhanced Relative Valuation Scatter Dashboard">
-    <div class="media-caption">
+         alt="AI Enhanced Relative Valuation Scatter Dashboard" 
+         style="max-width: 520px; width: 100%; height: auto; border-radius: 12px;">
+    <div class="media-caption" style="margin-top: 0.5rem; opacity: 0.8;">
       AI-Enhanced Scatter Plot with Similarity-Based Clustering
     </div>
   </div>
 </div>
 
-            <div class="project-content">
+            <div class="project-content" style="width: 100%;">
               <p class="muted">
                 A Streamlit-powered interactive dashboard that visualizes relative valuation positioning
                 across peer groups using financial multiples and performance drivers.
@@ -249,22 +252,23 @@
           </div>
         </article>
 
-        <article class="project-detail" id="concall-summariser">
+        <article class="project-detail" id="concall-summariser" style="max-width: 100%; padding: 2rem 2rem; margin-top: 3rem;">
           <div class="project-top">
             <h2>AI-Powered Concall Summariser</h2>
             <span class="tag">AI Research</span>
           </div>
 
-          <div class="project-body">
-            <div class="project-media">
+          <div class="project-body" style="display: block;">
+            <div class="project-media" style="text-align: center; margin-bottom: 2rem;">
               <img src="concall.png" 
-                   alt="AI Powered Concall Summariser">
-              <div class="media-caption">
+                   alt="AI Powered Concall Summariser" 
+                   style="max-width: 100%; height: auto; border-radius: 12px;">
+              <div class="media-caption" style="margin-top: 0.75rem; opacity: 0.8;">
                 AI-assisted concall extraction and summarisation pipeline integrated with Excel and Streamlit.
               </div>
             </div>
 
-            <div class="project-content">
+            <div class="project-content" style="width: 100%;">
               <p class="muted">
                 An automated AI-driven pipeline designed to scrape, optimise, and summarise
                 earnings call transcripts across the NSE universe.
