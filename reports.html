@@ -109,6 +109,84 @@
           </div>
         </article>
 
+        <!-- WACC Empirical Study Report -->
+        <article class="report-item">
+          <div class="report-header">
+            <h2>Empirical Study of WACC for NSE-Listed Companies</h2>
+            <div class="report-meta-tags">
+              <span class="tag">Mar 2026</span>
+              <span class="tag secondary">Valuation</span>
+            </div>
+          </div>
+          
+          <div class="report-preview-section">
+            <embed src="WACC_Empirical_Study_Kanishk.pdf" type="application/pdf" width="100%" height="500px" style="border-radius: 12px; border: 1px solid var(--line);" />
+          </div>
+
+          <div class="report-description">
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Project Overview</h3>
+            <p>
+              Empirical study of Weighted Average Cost of Capital (WACC) for all NSE-listed companies. Cross-sectional analysis across 11 sectors, 50+ industries, and 16 credit rating categories. Three WACC estimates computed per company using Daily, Weekly, and Monthly beta frequencies.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0.75rem 0;">
+              <strong>Key Metrics:</strong> Risk-Free Rate: 6.67% | Equity Risk Premium: 5.23% | Market: NSE India
+            </p>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Why WACC Matters</h3>
+            <ul style="margin: 0.75rem 0; padding-left: 1.5rem;">
+              <li>WACC represents the minimum return a company must earn to satisfy its capital providers</li>
+              <li>Acts as a risk mirror — higher WACC signals higher perceived risk by the market</li>
+              <li>Central to DCF valuation, capital budgeting, and investment decision-making</li>
+              <li>Higher WACC → Higher Risk → Higher Required Return</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Methodology</h3>
+            <ul style="margin: 0.75rem 0; padding-left: 1.5rem;">
+              <li>Retrieved complete NSE stock universe using nselib</li>
+              <li>Fetched historical price data and financials using yfinance</li>
+              <li>Beta calculated across three frequencies: Daily (1Y), Weekly (3Y), Monthly (5Y)</li>
+              <li>Cost of Equity computed via CAPM: Ke = Rf + β × ERP</li>
+              <li>Cost of Debt derived using Damodaran's Interest Coverage Ratio → Credit Rating → Default Spread framework</li>
+              <li>Capital weights based on market values of equity and debt</li>
+              <li>Post-processing and analysis done in Excel using FILTER, INDEX, LOOKUPS, and CHOOSECOLS</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Tech Stack</h3>
+            <ul style="margin: 0.75rem 0; padding-left: 1.5rem;">
+              <li><strong>Python:</strong> pandas, yfinance, nselib</li>
+              <li><strong>Excel:</strong> advanced formulas for structuring, mapping, and computation</li>
+              <li><strong>AI-assisted coding</strong> used to accelerate data pipeline development</li>
+              <li>Entire data collection and structuring completed in under an hour</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Key Empirical Findings</h3>
+            <ul style="margin: 0.75rem 0; padding-left: 1.5rem;">
+              <li><strong>WACC Across Sectors:</strong> Real Estate highest at 13.67%, Healthcare lowest at 11.52%. Spread of ~215 basis points. Sectors with higher leverage and cyclicality showed elevated WACC.</li>
+              <li><strong>WACC Across Industries:</strong> Department Stores (16.9%) and Telecom Services (15.1%) highest; Leisure (10.4%) and Electronic Gaming (8.7%) lowest. Dispersion at industry level significantly wider than sector level.</li>
+              <li><strong>Credit Rating Dominance:</strong> Single most powerful driver of WACC. D2/D rated firms: 16.96% vs 11.70% for A1/A+ rated firms. Non-linear relationship — distressed ratings cause exponential increases.</li>
+              <li><strong>Beta & Cost of Equity:</strong> Daily beta Ke ≈ 12.4%, Weekly Ke ≈ 13.4%, Monthly Ke ≈ 12.6%. Beta frequency materially alters WACC estimates for the same company.</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Limitations & Next Steps</h3>
+            <ul style="margin: 0.75rem 0; padding-left: 1.5rem;">
+              <li>Study uses synthetic credit ratings derived from Interest Coverage Ratio — not agency ratings</li>
+              <li>Tax rate not individually adjusted per company for after-tax cost of debt</li>
+              <li>Future: sector-wise visualizations and heatmaps for pattern identification</li>
+              <li>Track WACC changes over time for longitudinal analysis</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Acknowledgements</h3>
+            <p>
+              Guided by Parth Verma Sir and The Valuation School. Inspired by Aswath Damodaran's publicly available datasets and frameworks. Built as a practical application of valuation theory to the Indian equity market.
+            </p>
+          </div>
+
+          <div class="report-downloads">
+            <a href="WACC_Empirical_Study_Kanishk.pdf" class="download-btn pdf" download>Download PDF</a>
+            <a href="VAL PR.xlsx" class="download-btn excel" download>Download Excel</a>
+          </div>
+        </article>
+
       </section>
     </main>
 
