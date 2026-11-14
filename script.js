@@ -1,20 +1,11 @@
-const revealItems = document.querySelectorAll(
-  ".section, .hero-card, .project, .timeline-item, .project-detail"
-);
+// Classic Minimalist Portfolio
+// Enables tap-to-toggle for touch screens alongside native desktop CSS hover
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
+document.addEventListener("DOMContentLoaded", () => {
+  const expandableEntries = document.querySelectorAll("#experience .entry");
+  expandableEntries.forEach((entry) => {
+    entry.addEventListener("click", () => {
+      entry.classList.toggle("is-expanded");
     });
-  },
-  { threshold: 0.2 }
-);
-
-revealItems.forEach((item) => {
-  item.classList.add("reveal");
-  observer.observe(item);
+  });
 });
